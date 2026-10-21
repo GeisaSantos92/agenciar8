@@ -1,0 +1,553 @@
+/* Single de Modelos de Negócio (layout Figma: Modelo de Negócio - B2b)
+   Hero, FAQ e CTA vêm do solucao.css (mesmos template-parts das Soluções) */
+
+.single-modelo_negocio h2 {
+    color: #292928;
+}
+
+/*hero: selo acima do título*/
+
+.hero-solucao__badge {
+    margin: 0 0 12px;
+}
+
+/*grafismo lateral nas seções de fundo escuro*/
+
+.grafismo--escuro span {
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.grafismo--escuro.grafismo--esquerda span:first-child,
+.grafismo--escuro.grafismo--direita span:last-child {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+
+/*desafios*/
+
+.desafios-modelo,
+.ajuda-modelo,
+.resultados-modelo {
+    position: relative;
+    overflow: hidden;
+    --container: min(95vw, 1320px);
+}
+
+.desafios-modelo {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.desafios-modelo .container,
+.ajuda-modelo .container,
+.resultados-modelo .container {
+    position: relative;
+    z-index: 2;
+}
+
+.desafios-modelo__grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.desafios-modelo__header {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-right: 80px;
+}
+
+.desafios-modelo__header h2 {
+    max-width: 443px;
+}
+
+.lista-desafios {
+    flex: 0 1 597px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.lista-desafios li {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background: #FAFAFA;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 130%;
+    color: #292928;
+}
+
+.lista-desafios li::before {
+    content: '';
+    flex: 0 0 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFE700;
+}
+
+/*como a R8 ajuda*/
+
+.ajuda-modelo {
+    padding: 120px 0;
+    background: #fff;
+}
+
+/* O título quebra pelas linhas do painel (Enter); só o texto tem a largura fixa do Figma */
+.ajuda-modelo__header {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.ajuda-modelo__header .badge-section {
+    margin: 0 auto 12px;
+}
+
+.ajuda-modelo__header p {
+    max-width: 569px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    color: #666663;
+}
+
+.grid-ajuda {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.card-ajuda {
+    display: flex;
+    flex-direction: column;
+    min-height: 298px;
+    padding: 24px;
+    background: #FAFAFA;
+}
+
+.card-ajuda__icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 79px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 99px;
+    background: #fff;
+}
+
+.card-ajuda__icone img {
+    width: 24px;
+    height: 24px;
+}
+
+.card-ajuda h3 {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 130%;
+    color: #292928;
+}
+
+.card-ajuda p {
+    padding-top: 24px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    color: #666663;
+}
+
+/*metodologia (etapas em amarelo)*/
+
+.metodologia-modelo {
+    padding: 94px 0 160px;
+    background: #fff;
+}
+
+.metodologia-modelo__header {
+    max-width: 639px;
+    padding-bottom: 80px;
+}
+
+.lista-etapas-amarela {
+    list-style: none;
+}
+
+.lista-etapas-amarela li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 200px;
+    padding: 40px 32px;
+    background: #FFF594;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lista-etapas-amarela__numero {
+    flex: 0 0 87px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 94px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.lista-etapas-amarela__txt {
+    width: 476px;
+    max-width: 100%;
+}
+
+.lista-etapas-amarela__txt h3 {
+    padding-bottom: 16px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: clamp(22px, 2.2vw, 27px);
+    line-height: 140%;
+    color: #292928;
+}
+
+.lista-etapas-amarela__txt p {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 160%;
+    color: #292928;
+}
+
+/*resultados (cases)*/
+
+.resultados-modelo {
+    padding: 120px 0;
+    background: #0D0D0B;
+}
+
+.resultados-modelo__header {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.resultados-modelo__header .badge-section {
+    margin: 0 auto 12px;
+}
+
+.single-modelo_negocio .resultados-modelo__header h2 {
+    color: #EDECE6;
+}
+
+/* Mesma largura do Figma (1120px): case grande 847px + destaque 255px, sem esticar em telas largas */
+.lista-resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.resultado-linha {
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+}
+
+.resultado-linha--invertida {
+    flex-direction: row-reverse;
+}
+
+/* case grande: logo + texto com dois números (847px no Figma, o destaque fica com o restante) */
+.resultado-case {
+    flex: 1 1 847px;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 10px;
+    background: #EDECE6;
+}
+
+.resultado-case__logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 355px;
+    max-width: 45%;
+    aspect-ratio: 1;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.resultado-case__logo img {
+    width: 200px;
+    max-width: 80%;
+    height: auto;
+}
+
+.resultado-case__txt {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-self: stretch;
+    padding: 16px;
+    border-radius: 8px;
+    background: #1F1F1D;
+}
+
+.resultado-case__txt > p {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #EDECE6;
+}
+
+.resultado-linha--invertida .resultado-case__txt {
+    background: #FFF594;
+}
+
+.resultado-linha--invertida .resultado-case__txt > p {
+    color: #292928;
+}
+
+.resultado-case__numeros {
+    display: flex;
+    gap: 10px;
+}
+
+.resultado-numero {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 24px;
+    border-radius: 8px;
+    background: #292928;
+}
+
+.resultado-numero strong {
+    display: block;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: clamp(28px, 3vw, 36px);
+    line-height: 135%;
+    color: #EDECE6;
+}
+
+.resultado-numero span {
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    color: #EDECE6;
+}
+
+/* destaque menor: logo + número grande */
+.resultado-destaque {
+    flex: 0 0 255px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 387px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #fff;
+    color: #292928;
+}
+
+.resultado-linha--invertida .resultado-destaque {
+    background: #1F1F1D;
+    color: #EDECE6;
+}
+
+.resultado-destaque__logo {
+    width: auto;
+    max-width: 161px;
+    height: auto;
+    max-height: 81px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.resultado-destaque__txt strong {
+    display: block;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: clamp(56px, 6.5vw, 94px);
+    line-height: 130%;
+}
+
+.resultado-destaque__txt span {
+    display: block;
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+/*cta: fotos + número de empresas acima do título*/
+
+.cta-empresas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 32px;
+}
+
+.cta-empresas__pessoas {
+    display: flex;
+}
+
+.cta-empresas__pessoas img {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+}
+
+.cta-empresas__pessoas img + img {
+    margin-left: -10px;
+}
+
+.cta-empresas__txt {
+    text-align: left;
+    color: #fff;
+}
+
+.cta-empresas__txt strong {
+    display: block;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.cta-empresas__txt span {
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 160%;
+}
+
+/*responsivo*/
+
+@media (max-width:1100px) {
+
+    .grid-ajuda {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .resultado-linha,
+    .resultado-linha--invertida {
+        flex-direction: column;
+    }
+
+    .resultado-case {
+        flex-basis: auto;
+    }
+
+    .resultado-destaque {
+        flex-basis: auto;
+        min-height: 0;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .desafios-modelo,
+    .ajuda-modelo,
+    .resultados-modelo {
+        padding: 80px 0;
+    }
+
+    .metodologia-modelo {
+        padding: 80px 0;
+    }
+
+    .desafios-modelo__grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .desafios-modelo__header {
+        padding-right: 0;
+    }
+
+    .lista-desafios {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .ajuda-modelo__header,
+    .resultados-modelo__header,
+    .metodologia-modelo__header {
+        padding-bottom: 48px;
+    }
+
+    .resultado-case {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .resultado-case__logo {
+        width: 100%;
+        max-width: none;
+        aspect-ratio: auto;
+        min-height: 200px;
+    }
+
+}
+
+@media (max-width:640px) {
+
+    .grid-ajuda {
+        grid-template-columns: 1fr;
+    }
+
+    .card-ajuda {
+        min-height: 0;
+    }
+
+    .card-ajuda__icone {
+        margin-bottom: 40px;
+    }
+
+    .lista-desafios li {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .lista-etapas-amarela li {
+        flex-direction: column;
+        gap: 8px;
+        min-height: 0;
+        padding: 32px 20px;
+    }
+
+    .lista-etapas-amarela__numero {
+        flex: none;
+        font-size: 56px;
+    }
+
+    .resultado-case__numeros {
+        flex-direction: column;
+    }
+
+    .resultado-case__txt > p {
+        font-size: 18px;
+    }
+
+}

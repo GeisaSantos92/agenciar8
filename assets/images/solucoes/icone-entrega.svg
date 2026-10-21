@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#195;&#173;cones 24px - material symbols">
+<mask id="mask0_0_131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="36" height="36">
+<g id="Vector">
+<path d="M35.75 37.5L37.5 35.75L28 26.25H36.25V23.75H23.75V36.25H26.25V28L35.75 37.5Z" fill="black"/>
+<path d="M2.5 35.75L4.25 37.5L13.75 28V36.25H16.25V23.75H3.75V26.25H12L2.5 35.75Z" fill="black"/>
+<path d="M21.25 2.5H18.75V15.25L13 9.5L11.25 11.25L20 20L28.75 11.25L27 9.5L21.25 15.25V2.5Z" fill="black"/>
+</g>
+</mask>
+<g mask="url(#mask0_0_131)">
+<rect id="Bounding box" width="40" height="40" fill="#EDECE6"/>
+</g>
+</g>
+</svg>

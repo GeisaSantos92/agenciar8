@@ -1,0 +1,465 @@
+.hero-agencia .badge-section {
+    margin-bottom: 12px;
+}
+
+.click {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -2%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero-agencia .hero-txt p {
+    max-width: 742px;
+}
+
+/* Previne rolagem horizontal devido ao posicionamento do SVG fora da tela */
+body.page-template-page-agencia {
+    overflow-x: hidden;
+}
+
+
+
+/* Ajustes da seção Hero */
+.hero-agencia {
+    position: relative;
+    padding-top: 84px;
+    padding-bottom: 160px;
+}
+
+.hero-agencia .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* SVG de Fundo com efeito Glow ambientado */
+.hero-agencia-bg {
+    position: absolute;
+    top: -192px;
+    left: -202px;
+    height: 1000px;
+    pointer-events: none;
+    z-index: 99999;
+    filter: blur(130px);
+    opacity: 0.8;
+}
+
+.hero-agencia-bg svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.mosaico-agencia {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 29px;
+    margin-top: 50px;
+}
+
+@media(max-width:1024px) {
+    .mosaico-agencia {
+        flex-wrap: wrap;
+    }
+}
+
+.mosaico-agencia img {
+    padding: 8px;
+    border: 0.5px solid #FFFFFF33;
+    border-radius: 8px;
+}
+
+/*o que os move*/
+
+
+
+.move {
+    padding-top: 120px;
+    padding-bottom: 160px;
+    background: #fff;
+}
+
+.move .container {
+    max-width: 1280px;
+}
+
+.move h2 {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: clamp(48px, 5vw, 120px);
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: start;
+    color: #292928;
+    margin: 0;
+}
+
+.move-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 60px;
+
+    margin-left: 170px;
+    margin-top: 80px;
+}
+
+.move-item {
+    padding-bottom: 22px;
+    border-bottom: 1px solid #0000001A;
+    min-height: 140px;
+}
+
+.move-item p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #666663;
+    max-width: 284px;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+@media (max-width:1200px) {
+
+    .move-grid {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .move-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+}
+
+/*impulsionar-banner*/
+
+.impulsionar-banner {
+    background: #fff;
+
+}
+
+.impulsionar-banner .title-section h2 {
+
+    margin: 0;
+}
+
+.impulsionar-banner h2,
+.impulsionar-banner p {
+    text-align: start;
+}
+
+.impulsionar-banner .title-section {
+    max-width: 607px;
+}
+
+.impulsionar-banner .title-section h2 {
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+.box-impulsionar-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 640px;
+    background: #FAFAFA;
+    overflow: hidden;
+
+}
+
+.left-img-impulsionar {
+
+    height: 100%;
+}
+
+.img-banner-impulsionar {
+    height: 100%;
+}
+
+.left-img-impulsionar img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-txt-impulsionar {
+    padding: 80px;
+}
+
+.btn-impulsionar-banner {
+    margin-top: 64px;
+}
+
+/* No celular as duas colunas não cabem lado a lado (o texto ficava cortado): imagem em cima, texto embaixo */
+@media (max-width:768px) {
+
+    .box-impulsionar-banner {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+    }
+
+    .left-img-impulsionar {
+        height: 280px;
+    }
+
+    .right-txt-impulsionar {
+        padding: 40px 24px;
+    }
+
+    .impulsionar-banner .title-section h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .btn-impulsionar-banner {
+        margin-top: 40px;
+    }
+
+}
+
+/*essencia*/
+
+.essencia {
+    background: #fff;
+    padding-bottom: 120px;
+    padding-top: 80px;
+}
+
+.essencia .title-section h2,
+.essencia .title-section p {
+    text-align: start;
+}
+
+.essencia .badge-section {
+    margin: 0;
+}
+
+.essencia .title-section {
+    max-width: 680px;
+}
+
+.box-txt-essencia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.essencia img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/*estrutura*/
+
+.estrutura {
+    background: #FFF380;
+    padding: 80px 0;
+}
+
+.estrutura .box-txt-essencia {
+    gap: 80px;
+}
+
+.estrutura .title-section {
+    max-width: 813px;
+}
+
+/* Essência, Estrutura e Propósito no celular: texto e imagem um embaixo do outro (lado a lado a imagem sumia) */
+@media (max-width:768px) {
+
+    .box-txt-essencia,
+    .estrutura .box-txt-essencia {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .box-txt-essencia > .box {
+        width: 100%;
+    }
+
+}
+
+/*nossa-cultura*/
+
+.nossa-cultura {
+    padding-bottom: 120px;
+    background: #fff;
+}
+
+.nossa-cultura .title-section h2,
+.nossa-cultura .title-section p {
+    text-align: start;
+}
+
+.nossa-cultura .title-section h2 {
+    font-weight: 600;
+}
+
+.nossa-cultura .badge-section {
+    margin: 0;
+}
+
+.box-items-cultura {
+    margin-top: 80px;
+}
+
+
+.cultura-item {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 520px);
+    column-gap: 71px;
+    align-items: start;
+    padding: 64px 10px;
+    border-top: 1px solid #00000033;
+}
+
+
+
+
+
+.cultura-content {
+    min-width: 0;
+}
+
+.cultura-content h3 {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #292928;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.cultura-content p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -2%;
+    max-width: 647px;
+    color: #666663;
+}
+
+@media (max-width:768px) {
+
+    .cultura-item {
+        grid-template-columns: 48px 1fr;
+        column-gap: 24px;
+        padding: 28px 0;
+    }
+
+    .cultura-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .cultura-icon svg,
+    .cultura-icon img {
+        width: 32px;
+        height: 32px;
+    }
+
+}
+
+/*solucoes*/
+
+.solucoes {
+    padding-top: 120px;
+    padding-bottom: 180px;
+    background: #fff;
+}
+
+.modelo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 90px;
+    gap: 24px
+}
+
+.modelo-card {
+    padding: 40px;
+    background: #FAFAFA;
+    border-radius: 8px;
+
+}
+
+.modelo-card h3 {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 27px;
+    color: #292928;
+    line-height: 140%;
+    letter-spacing: 0%;
+    margin-top: 3px;
+    margin-bottom: 93px;
+
+}
+
+.modelo-card p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #666663;
+    max-width: 384px;
+}
+
+.modelo-card:not(:first-child) {
+    border-left: 1px solid#FFFFFF33;
+}
+
+
+
+@media (max-width:991px) {
+
+    .modelo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modelo-card {
+        padding: 40px 0;
+        border-left: 0 !important;
+        border-top: 1px solid #FFFFFF33;
+    }
+
+    .modelo-card:first-child {
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .modelo-head {
+        margin-bottom: 56px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .modelo-entrega {
+        padding: 72px 0;
+    }
+
+}
